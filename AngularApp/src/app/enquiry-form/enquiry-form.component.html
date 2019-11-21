@@ -1,0 +1,46 @@
+<div class="container-fluid">
+  <h2>Enquiry Form</h2>
+  <form #enquiryForm="ngForm" (ngSubmit)="onSubmit(enquiryForm)">
+  <div class="row">
+    <div class="col-sm-6 col-md-6">
+      <label>First Name</label>
+      <input type=text placeholder="Enter your First name" />
+    </div>
+    <div class="col-sm-6 col-md-6">
+      <label>Last Name</label>
+      <input type=text placeholder="Enter your Last name" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-6">
+      <label>Mobile Number</label>
+      <input type=number placeholder="Enter your Mobile Number" />
+    </div>
+    <div class="col-sm-6 col-md-6">
+      <label>Email Id</label>
+      <input type=text placeholder="Enter your Email Id" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-6">
+      <label>City</label>
+      <input type=text placeholder="Enter your City name" />
+    </div>
+    <div class="col-sm-6 col-md-6">
+      <label>State</label>
+      <input type=text placeholder="Enter your State" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <label>Message</label>
+      <textarea type=text placeholder="Enter Your Message"></textarea>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-md-2">
+      <button class="btn btn-custom right" type="submit" [disabled]="!enquiryForm.valid">Submit</button>
+    </div>
+  </div>
+  </form>
+</div>
